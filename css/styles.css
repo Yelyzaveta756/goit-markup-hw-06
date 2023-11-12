@@ -55,8 +55,9 @@ button {
     overflow: hidden;
   }
 
-  .container {
+.container {
     padding: 0 16px;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -86,12 +87,16 @@ button {
     color: #2E2F42;
 }
 
+    
+.navigation-list {
+    display: flex;  
+}
+
 /* MOBILE STYLES */
 
 @media screen and (max-width: 768px) {
     .container {
         width: 320px;
-        margin: 0 auto;
     }
 
     .navigation-list {
@@ -305,10 +310,6 @@ button {
         padding: 25.5px 0;
     }
 
-    .navigation-list {
-        display: flex;  
-    }
-    
     .navigation-item {
         margin-right: 40px;
         color: #404bbf; 
@@ -356,13 +357,12 @@ button {
 
     .address-list {
         display: flex;
-        row-gap: 12px;
+        gap: 12px;
         flex-direction: column;
     }
 
     .address-link {
         color: #434455;
-        font-family: Roboto;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -391,35 +391,12 @@ button {
     .main-navigation {
         display: flex; 
         align-items: center;
-        align-items: center;
-        justify-content: space-between;
-        padding: 17.5px 0;
-        align-items: center; 
-        justify-content: space-between;
-        padding: 17.5px 0;
     }
     
     .logotype {
-        font-family: "Raleway", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17; 
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
         margin-right: 76px;
     }
-    
-    .logotype-span {
-        font-family: "Raleway", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17; 
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #2E2F42;
-    }
-    
+
     .navigation-list {
         display: flex;  
     }
@@ -489,7 +466,7 @@ button {
         display: flex;
         gap: 40px;
         padding: 24px 0;
-        margin-left: 332px;
+        flex-direction: row;
     }
     
     .address-link {
